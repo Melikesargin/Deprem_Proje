@@ -1,50 +1,50 @@
-# PROJE HEDEFLERİ
+# PROJECT OBJECTIVES
 
--	Depremlerin coğrafi dağılımlarını inceleme,hangi bölgelerde daha sık depremler meydana geliyor.
--	Zaman içindeki deprem dağılımları.
--	Deprem ve derinlik, deprem büyüklük türleri ilişkilerini anlama.
+- Examining the geographical distribution of earthquakes, in which regions earthquakes occur more frequently.
+- Earthquake distributions over time.
+- Understanding the relationships between earthquake and depth, earthquake magnitude types.
 
-# VERİ SETİ TEMİZLENMESİ
+# DATA SET CLEANING
 
--	Null değerleri incele ve uygun bir strateji belirle (doldurma, çıkarma, tahminleme).
--	Gereksiz veya eksik bilgi içeren sütunları kaldır.
--	Veri tiplerini kontrol et ve uygun şekilde güncelle.(Tarih sütunu)
+- Examine null values and determine an appropriate strategy (filling, subtracting, guessing).
+- Remove columns with unnecessary or missing information.
+- Check data types and update accordingly. (Date column)
 
-# KEŞİFSEL VERİ ANALİZİ VE GÖRSELLEŞTİRME
+# EXPLORATORY DATA ANALYSIS AND VISUALIZATION
 
--	Veri setindeki ilişkileri, dağılımları ve desenleri görselleştir.
--	İstatistiksel analizler ve grafikler kullanarak veri setini daha derinlemesine anla.
--	Anomali veya ilginç desenleri belirle.
+- Visualize relationships, distributions and patterns in the data set.
+- Gain a deeper understanding of the data set using statistical analysis and graphs.
+- Identify anomalies or interesting patterns.
 
-# TAHMİN MODELLERİ OLUŞTUR
+# CREATE PREDICTION MODELS
 
--	Hangi modeli kullanacağınıza karar ver (regresyon, sınıflandırma, kümeleme vb.)
--	Veri setini model eğitimine uygun bir formata dönüştür.
--	Bir başlangıç modeli oluştur ve eğit.
--	Modelin performansını ölç.
--	Modelin başarılarını ve başarısızlıklarını değerlendir.
+- Decide which model you will use (regression, classification, clustering, etc.)
+- Convert the data set into a format suitable for model training.
+- Create and train a starter model.
+- Measure the performance of the model.
+- Evaluate the model's successes and failures.
 
-# SONUÇLARI YORUMLA VE RAPORLA
+# COMMENT AND REPORT THE RESULTS
 
--	Projenin sonuçlarını yorumla ve anlamlandır.
--	Modelin başarısını veya başarısızlığını nedenlendir.
--	Sonuçları net ve anlaşılır bir şekilde raporla.
+- Interpret and make sense of the results of the project.
+- Reason for the success or failure of the model.
+- Report results clearly and understandably.
 
 
-# VERİ SETİ İNCELEME VE ANLAMA
+# DATA SET REVIEW AND UNDERSTANDING
                                                                                                          
--	No: Depremlere verilen numara	
--	Deprem Kodu: Depremlere verilen özel kod
--	Olus tarihi: Gün ay yıl olarak meydana geldiği tarih	
--	Olus zamani: Depremin meydana geldiği saat
--	Enlem: Enlem bilgisi
--	Boylam: Boylam bilgisi	
--	Der(km): Deprem derinliği	
--	xM: Depremin moment büyüklüğünü ifade eder.	
--	MD(Süreye bağlı büyüklük): Depremin, sismometre üzerinde ne kadar uzun süreli bir titreşim oluşturduğu ölçülür ve deprem merkezinin uzaklığı ile ölçeklenir. Bu yöntem küçük (M<5,0) ve yakın (Uzaklık<300 km) depremeler için kullanılır.	
--	ML(Yerel (Lokal) Büyüklük): Bu yöntem de görece küçük (büyüklüğü 6,0’dan az) ve yakın (uzaklığı 700 km'den az) depremeler için kullanılır.	
--	Mw: Bu büyüklük türü, diğerlerine göre en güvenilir olanıdır. Bilim dünyasında, eğer bir deprem için moment büyüklüğü hesaplanabilmişse, diğer büyüklük türlerine gerek kalmadığı düşünülür. Uygulamada, sadece belli bir büyüklüğün üzerindeki depremler için (M>4,0) Moment Büyüklüğü hesaplanabilir.
--	Ms(Yüzey Dalgası Büyüklüğü): Bu yöntem ilk iki yöntemin yetersiz kaldığı büyük depremleri (M>6,0) ölçmek için geliştirilmiştir. Diğer yöntemlerin aksine bu yöntemin güvenilirliği uzak mesafeden yapılan ölçümlerde daha da artar.	
--	Mb(Cisim Dalgası Büyüklüğü):Bu yöntem Yüzey Dalgası yöntemine benzer, tek farkı yüzeyden yayılan dalgalar yerine derinliklerde ilerleyen dalgaların kullanılmasıdır.
--	Tip: "Ke" kodu, depremin tektonik kökenli olduğunu ve bir fay hattı boyunca gerçekleştiğini ifade eder. "Se" kodu ise depremin bir yatay kayma (strike-slip) fay tipine sahip olduğunu belirtir.	
--	Yer: Depremin meydana geldiği konum
+- No: Number given to earthquakes
+- Earthquake Code: Special code given to earthquakes
+- Date of occurrence: Date of occurrence in day, month and year.
+- Time of occurrence: The time the earthquake occurred
+- Latitude: Latitude information
+- Longitude: Longitude information
+- Der(km): Earthquake depth
+- xM: It refers to the moment magnitude of the earthquake.
+- MD (Time-dependent magnitude): It is measured how long the earthquake creates a vibration on the seismometer and is scaled with the distance from the earthquake center. This method is used for small (M<5.0) and close (Distance<300 km) earthquakes.
+- ML (Local) Magnitude: This method is used for relatively small (magnitude less than 6.0) and close (less than 700 km distance) earthquakes.
+- Mw: This type of magnitude is the most reliable compared to the others. In the scientific world, it is thought that if the moment magnitude for an earthquake can be calculated, there is no need for other magnitude types. In practice, Moment Magnitude can only be calculated for earthquakes above a certain magnitude (M>4.0).
+- Ms (Surface Wave Magnitude): This method was developed to measure large earthquakes (M>6.0) for which the first two methods were insufficient. Unlike other methods, the reliability of this method increases even more in long distance measurements.
+- Mb (Body Wave Magnitude): This method is similar to the Surface Wave method, the only difference is that waves propagating at depth are used instead of waves propagating from the surface.
+- Type: "Ke" code indicates that the earthquake is of tectonic origin and occurs along a fault line. The "Se" code indicates that the earthquake has a strike-slip fault type.
+- Location: The location where the earthquake occurred
